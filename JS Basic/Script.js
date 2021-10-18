@@ -1,5 +1,7 @@
-var ourArray = [];
-for (var i = 1; i <= 5; i++) {
-  ourArray.push(i);
+// Setup
+var myArray = [];
+for(var count = 1; count<10; count+=2){
+  myArray.push(count);
 }
-console.log(ourArray);
+// Only change code below this line
+console.log(myArray);
