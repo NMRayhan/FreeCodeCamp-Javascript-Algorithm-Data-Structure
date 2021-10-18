@@ -1,14 +1,21 @@
-var myStorage = {
-    "car": {
-      "inside": {
-        "glove box": "maps",
-        "passenger seat": "crumbs"
-       },
-      "outside": {
-        "trunk": "jack"
-      }
+var myPlants = [
+    {
+      type: "flowers",
+      list: [
+        "rose",
+        "tulip",
+        "dandelion"
+      ]
+    },
+    {
+      type: "trees",
+      list: [
+        "fir",
+        "pine",
+        "birch"
+      ]
     }
-  };
+  ];
   
-  var gloveBoxContents = myStorage.car.inside["glove box"];
-  console.log(gloveBoxContents);
+  var secondTree = myPlants[1].type;
+  console.log(secondTree);
