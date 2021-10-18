@@ -1,7 +1,5 @@
 var ourArray = [];
-var i = 5;
-while (i > -1) {
-    ourArray.push(i);
-    i--;
+for (var i = 1; i <= 5; i++) {
+  ourArray.push(i);
 }
 console.log(ourArray);
