@@ -1,17 +1,25 @@
-let count = 0;
-
-function cc(card) {
-    var rege = /[JQKA]/;
-    if (card > 1 && card < 7) {
-        count++;
-    } else if (card === 10 || rege.test(card)) {
-        count--;
+var myMusic = [
+    {
+        "artist": "Billy Joel",
+        "title": "Piano Man",
+        "release_year": 1973,
+        "formats": [
+            "CD",
+            "8T",
+            "LP"
+        ],
+        "gold": true
+    },
+    {
+        "artist": "Asif Akbar",
+        "title": "O priya Tmi Kothai",
+        "release_year": 2001,
+        "formats": [
+            "CD",
+            "8T",
+            "LP"
+        ],
+        "gold": true
     }
-    if (count > 0) {
-        return count + " Bet";
-    } else {
-        return count + " Hold";
-    }
-}
-
-console.log(cc('Q'));
+];
+console.log(myMusic[1]);
