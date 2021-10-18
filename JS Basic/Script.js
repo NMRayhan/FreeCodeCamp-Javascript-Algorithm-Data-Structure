@@ -1,25 +1,14 @@
-var myMusic = [
-    {
-        "artist": "Billy Joel",
-        "title": "Piano Man",
-        "release_year": 1973,
-        "formats": [
-            "CD",
-            "8T",
-            "LP"
-        ],
-        "gold": true
-    },
-    {
-        "artist": "Asif Akbar",
-        "title": "O priya Tmi Kothai",
-        "release_year": 2001,
-        "formats": [
-            "CD",
-            "8T",
-            "LP"
-        ],
-        "gold": true
+var myStorage = {
+    "car": {
+      "inside": {
+        "glove box": "maps",
+        "passenger seat": "crumbs"
+       },
+      "outside": {
+        "trunk": "jack"
+      }
     }
-];
-console.log(myMusic[1]);
+  };
+  
+  var gloveBoxContents = myStorage.car.inside["glove box"];
+  console.log(gloveBoxContents);
