@@ -1,6 +1,30 @@
-const s = [5, 6, 7];
-s = [1, 2, 3]; //Assignment to Constant Variable
-s[2] = 45;
-console.log(s);
+let obj = {
+    name: "freeCodeCamp",
+    review: "Awesome"
+};
+console.log(obj);
+obj.name = "w3School";
+console.log(obj);
 
-//console.log() Showing [5,6,7], Don't showing [1,2,3] because s is const Variable
+Object.freeze(obj);
+obj.name = "freeCodeCamp";
+console.log(obj);
+
+
+function freezeObj() {
+    const MATH_CONSTANTS = {
+      PI: 3.14
+    };
+    // Only change code below this line
+    Object.freeze(MATH_CONSTANTS);
+    // Only change code above this line
+    try {
+      MATH_CONSTANTS.PI = 99;
+    } catch (ex) {
+      console.log(ex);
+    }
+    return MATH_CONSTANTS.PI;
+  }
+  const PI = freezeObj();
+
+//   Showing Error: [TypeError: Cannot assign to read only property 'PI' of object '#<Object>']
