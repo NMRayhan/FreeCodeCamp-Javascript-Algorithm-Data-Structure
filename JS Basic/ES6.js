@@ -1,21 +1,11 @@
-const myFun = function () {
-    const myVar = "Value";
-    return myVar;
-}
-console.log(myFun());
+const multiplier = num1 => num1 * 2;
+console.log(multiplier(5));
 
-const sumOfTwoInt = (num1, num2) => {
-    const myVar = num1 + num2;
-    return myVar;
-}
-console.log(sumOfTwoInt(1, 2));
+const different = (num1, num2) => num1 - num2;
+console.log(different(3, 2));
 
-const sum = (num1, num2) => num1 + num2;
-
-console.log(sum(2, 5));
-
-const magic = () => {
-    return new Date();
+const myConcat = (arr1, arr2) => {
+    return arr1.concat(arr2);
 };
 
-console.log(magic());
+console.log(myConcat([1, 2], [3, 4, 5]));
