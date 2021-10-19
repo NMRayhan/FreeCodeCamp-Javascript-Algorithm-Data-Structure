@@ -1,13 +1,6 @@
-function printManyTimes(str) {
+const s = [5, 6, 7];
+s = [1, 2, 3]; //Assignment to Constant Variable
+s[2] = 45;
+console.log(s);
 
-    // Only change code below this line
-  
-    const sentence = str + " is cool!";
-    for (let i = 0; i < str.length; i += 2) {
-      console.log(sentence);
-    }
-  
-    // Only change code above this line
-  
-  }
-  printManyTimes("free");
+//console.log() Showing [5,6,7], Don't showing [1,2,3] because s is const Variable
