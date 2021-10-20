@@ -18,7 +18,7 @@ const personOne = {
 }
 
 const person = ({name, age, address:{city, States}}) =>{
-    return `My Name is ${name}, I'm ${age}'s Old and i'm from ${city}, it's States of ${States}`;
+    return `My Name is ${name}, I'm ${age}'s\nOld and i'm from ${city}, it's States of ${States}`;
 }
 
 console.log(person(personOne));
