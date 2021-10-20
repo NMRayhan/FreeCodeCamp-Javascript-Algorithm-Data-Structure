@@ -1,10 +1,9 @@
-const HIGH_TEMPERATURE ={
-    yesterday : 77,
+const HIGH_TEMPERATURES = {
+    yesterday: 77,
     today: 75,
     tomorrow: 80
 };
 
-const {today, tomorrow, yesterday} = HIGH_TEMPERATURE;
-console.log(today);
-console.log(tomorrow);
-console.log(yesterday);
+const { today: highToday, tomorrow: highTomorrow } = HIGH_TEMPERATURES;
+console.log(highToday);
+console.log(highTomorrow);
