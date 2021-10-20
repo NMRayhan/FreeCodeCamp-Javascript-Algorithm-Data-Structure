@@ -1,19 +1,19 @@
-const person = {
-    firstName: "John",
-    lastName: "Doe",
-    age: 50,
-    eyeColor: "blue"
-};
+let str = "Apple, Banana, Kiwi";
+console.log(str.slice(6, 13));
+console.log(str.slice(-12, -6));
 
-function personFunction() {
-    return person;
+console.log(str.substring(6, 13));
+
+
+let str2 = "Daffodil International University";
+
+for (let i = 0; i < str.length; i+=1){
+    console.log(str2.substr(i));
 }
 
-console.log(personFunction());
+let text = "Please visit Microsoft and Microsoft!";
+let newText = text.replace("Microsoft", "W3Schools");
+console.log(newText);
 
-person.age = 20;
-person.location = "Dhaka";
-
-console.log(personFunction());
-
-console.log(person.hasOwnProperty("location"));
+let newText2 = text.replace(/MICROSOFT/i,"W3Schools")
+console.log(newText2);
