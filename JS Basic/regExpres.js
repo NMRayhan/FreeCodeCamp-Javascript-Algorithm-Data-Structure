@@ -1,5 +1,4 @@
-let myString = "Hello, World";
-let myTest = /Hello/;
-
-let result = myTest.test(myString);
+let petString = "James has a pet cat.";
+let petRegex = /dog|cat|bird|fish/;
+let result = petRegex.test(petString);
 console.log(result);
