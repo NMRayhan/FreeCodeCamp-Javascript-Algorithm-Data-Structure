@@ -1,14 +1,10 @@
-const result = {
-    success: ["max-length", "no-amd", "prefer-arrow-functions"],
-    failure: ["no-var", "var-on-top", "linebreak"],
-    skipped: ["no-extra-semi", "no-dup-keys"]
-};
-function makeList(arr) {
-    const failureItems = arr.map(item =>{
-        return `<li class="text-warning">${item}</li>`
-    })
-    return failureItems;
-}
-
-const failuresList = makeList(result.failure);
-console.log(failuresList);
+// Only change code below this line
+const bicycle = {
+    gear: 2,
+    setGear(newGear) {
+      this.gear = newGear;
+    }
+  };
+  // Only change code above this line
+  bicycle.setGear(3);
+  console.log(bicycle.gear);
