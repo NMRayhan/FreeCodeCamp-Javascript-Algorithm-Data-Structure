@@ -1,20 +1,26 @@
-// Only change code below this line
-class Thermostat {
-    constructor(fahrenhitTemp) {
-        this.fahrenhitTemp = fahrenhitTemp;
-    }
-    get temperature() {
-        return (5 / 9 * (this.fahrenhitTemp - 32))
-    }
-    set temperature(temperature) {
-        this.fahrenhitTemp = (temperature * 9.0) / 5 + 32;
-    }
-}
-// Only change code above this line
+(function () {
+    // We keep these variables private inside this closure scope
 
-const thermos = new Thermostat(76); // Setting in Fahrenheit scale
-let temp = thermos.temperature; // 24.44 in Celsius
-console.log(temp);
-thermos.temperature = 26;
-temp = thermos.temperature; // 26 in Celsius
-console.log(temp);
+    var myGrades = [93, 95, 88, 0, 55, 91];
+
+    var average = function () {
+        var total = myGrades.reduce(function (accumulator, item) {
+            return accumulator + item
+        }, 0);
+
+        return 'Your average grade is ' + total / myGrades.length + '.';
+    }
+
+    var failing = function () {
+        var failingGrades = myGrades.filter(function (item) {
+            return item < 70;
+        });
+
+        return 'You failed ' + failingGrades.length + ' times.';
+    }
+
+    console.log(failing());
+    console.log(myGrades);
+
+}());
+
