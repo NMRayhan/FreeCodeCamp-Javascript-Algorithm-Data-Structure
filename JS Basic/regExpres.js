@@ -1,7 +1,13 @@
-let myString ="Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi qui nobis unde aspernatur nisi maiores quis animi veniam! Impedit tempora fugit quasi ipsam officiis et eius similique, non sit, ab veniam laborum quas odio! Tempore error eligendi libero tenetur quas!";
-
-let searchStr = /ab./gi; //using Wildcard Period .
-
-let result = myString.match(searchStr);
+let bigStr = "big";
+let bagStr = "bag";
+let bugStr = "bug";
+let bogStr = "bog";
+let bgRegex = /b[aiu]g/;
+var result = bigStr.match(bgRegex);
 console.log(result);
-console.log(result.length);
+result = bagStr.match(bgRegex);
+console.log(result);
+result = bugStr.match(bgRegex);
+console.log(result);
+result = bogStr.match(bgRegex);
+console.log(result);
