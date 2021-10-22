@@ -1,5 +1,5 @@
-let quoteSample = "Beuare of Beware in Beiare the Beabove  uare code; I have only proved it correct, not tried it.";
-let vowelRegex = /be[uwia]/gi; // Change this line
-let result = quoteSample.match(vowelRegex); // Change this line
+let quoteSample = "The quick brown fox jumps over the lazy dog.";
+let alphabetRegex = /[a-z]/gi; // Change this line
+let result = quoteSample.match(alphabetRegex); // Change this line
 
 console.log(result);
