@@ -1,4 +1,4 @@
-let chewieQuote = "<h1>Winter is coming</h1>";
-let chewieRegex = /<.*?>/;
+let chewieQuote = "P2P1P5P4CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCP3"
+let chewieRegex = /C+/g;
 let result = chewieQuote.match(chewieRegex);
-console.log(result); 
+console.log(result);
