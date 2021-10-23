@@ -1,4 +1,4 @@
-let rickyAndCal = "Ricky9@gmail.com";
-let calRegex = /^[a-z]+[0-9]/gi; // Change this line
-let result = calRegex.test(rickyAndCal);
+let caboose = "The last car on a train is the caboose";
+let lastRegex = /caboose$/;
+let result = lastRegex.test(caboose);
 console.log(result);
