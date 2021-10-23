@@ -1,4 +1,4 @@
-let quoteSample = "3 blind mice.";
-let myRegex = /[^aeiou0-9]/gi; // Change this line
-let result = quoteSample.match(myRegex);
-console.log(result); //regex myRegex should match 9 item
+let difficultSpelling = "Mississippi";
+let myRegex = /s+/gi; 
+let result = difficultSpelling.match(myRegex);
+console.log(result); 
