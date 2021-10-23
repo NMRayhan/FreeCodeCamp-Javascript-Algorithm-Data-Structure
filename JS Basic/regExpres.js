@@ -1,4 +1,4 @@
-let chewieQuote = "P2P1P5P4CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCP3"
-let chewieRegex = /C+/g;
-let result = chewieQuote.match(chewieRegex);
+let rickyAndCal = "Ricky9@gmail.com";
+let calRegex = /^[a-z]+[0-9]/gi; // Change this line
+let result = calRegex.test(rickyAndCal);
 console.log(result);
