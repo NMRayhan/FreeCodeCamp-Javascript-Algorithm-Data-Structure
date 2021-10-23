@@ -1,15 +1,7 @@
-/*You need to check all the usernames in a database. Here are some simple rules that users have to follow when creating their username.
-
-1.Usernames can only use alpha-numeric characters.
-
-2.The only numbers in the username have to be at the end. There can be zero or more of them at the end. Username cannot start with the number.
-
-3.Username letters can be lowercase and uppercase.
-
-4.Usernames have to be at least two characters long. A two-character username can only use alphabet letters as characters.*/
+/*You can search for whitespace using \s, which is a lowercase s. This pattern not only matches whitespace, but also carriage return, tab, form feed, and new line characters. You can think of it as similar to the character class [ \r\t\f\n\v].*/
 
 
-let quoteSample = "Oceans11";
-let alphabetRegexV2 = /^[a-z]([0-9]{2,}|[a-z]+\d*)$/i;
-let result = quoteSample.match(alphabetRegexV2);
+let sample = "Whitespace is important in separating words";
+let countWhiteSpace = /\s/g; // Change this line
+let result = sample.match(countWhiteSpace);
 console.log(result);
