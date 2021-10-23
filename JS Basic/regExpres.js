@@ -1,6 +1,4 @@
-/*total 6 character and last 2 character is Digit*/
-
-let wrongString = "The sky is silver";
-let silverString = /silver/;
-let result = wrongString.replace(silverString, "Blue");
-console.log(result);
+let str = "one two three";
+let fixRegex = /(\w+)\s(\w+)\s(\w+)/;
+let replaceText = '$3 $2 $1'; 
+let result = str.replace(fixRegex,replaceText);
