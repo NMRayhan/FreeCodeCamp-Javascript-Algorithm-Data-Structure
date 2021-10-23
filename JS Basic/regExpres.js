@@ -1,4 +1,4 @@
 let quoteSample = "Coding! 42%";
-let alphabetRegexV2 = /[^A-Za-z0-9_]/g; // \W. or Uppercase W this is the Shortcut is Equals to [^A-Za-z0-9_]
+let alphabetRegexV2 = /\d/g; // lowercase d for digit, this is equal to the Character class [0-9]
 let result = quoteSample.match(alphabetRegexV2).length;
 console.log(result);
