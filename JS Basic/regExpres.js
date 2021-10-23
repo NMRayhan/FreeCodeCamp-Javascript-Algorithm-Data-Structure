@@ -1,10 +1,10 @@
-/*You can specify the lower and upper number of patterns with quantity specifiers using curly brackets. Sometimes you only want to specify the lower number of patterns with no upper limit.
+/*To specify a certain number of patterns, just have that one number between the curly brackets.
 
-To only specify the lower number of patterns, keep the first number followed by a comma.*/
+For example, to match only the word hah with the letter a 3 times, your regex would be /ha{3}h/.*/
 
 let A4 = "haaaah";
 let A2 = "haah";
 let A10 = "h" + "a".repeat(10) + "h";
-let multipleA = /ha{2,}h/;
-let result = multipleA.test(A2);
+let multipleA = /ha{2}h/;
+let result = multipleA.test(A4);
 console.log(result);
