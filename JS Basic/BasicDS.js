@@ -1,9 +1,12 @@
-const arr = [2, 4, 5, 1, 7, 5, 2, 1];
-let sum = 0;
-let newArr = arr.splice(1,3);
-console.log(newArr);
-for(let i=0; i<newArr.length; i++){
-  sum = sum + newArr[i];
+/*
+We have defined a function, htmlColorNames, which takes an array of HTML colors as an argument. Modify the function using splice() to remove the first two elements of the array and add 'DarkSalmon' and 'BlanchedAlmond' in their respective places.
+*/ 
+
+function htmlColorNames(arr) {
+    let startIndex = 0;
+    let amountOfDelete = 2;
+    arr.splice(startIndex, amountOfDelete, 'DarkSalmon', 'BlanchedAlmond')
+    return arr;
 }
-// Only change code above this line
-console.log(sum);
+
+console.log(htmlColorNames(['DarkGoldenRod', 'WhiteSmoke', 'LavenderBlush', 'PaleTurquoise', 'FireBrick']));
