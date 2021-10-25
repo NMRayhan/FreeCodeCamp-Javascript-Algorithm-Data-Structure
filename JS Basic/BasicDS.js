@@ -22,9 +22,7 @@ let users = {
 };
 
 function getArrayOfUsers(usersObj) {
-    let newArr = Object.keys(usersObj);
-    return newArr
-
+    return Object.keys(usersObj);
 }
 
 console.log(getArrayOfUsers(users));
