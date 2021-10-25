@@ -1,5 +1,5 @@
 /*
-We've defined a function, checkInventory, which receives a scanned item as an argument. Return the current value of the scannedItem key in the foods object. You can assume that only valid keys will be provided as an argument to checkInventory.
+Use the delete keyword to remove the oranges, plums, and strawberries keys from the foods object.
 */
 
 let foods = {
@@ -9,10 +9,11 @@ let foods = {
     bananas: 13,
     grapes: 35,
     strawberries: 27
-  };
-  
-  function checkInventory(scannedItem) {
-    return foods[scannedItem]
-  }
-  
-  console.log(checkInventory("apples"));
+};
+
+delete foods.oranges;
+delete foods.plums;
+delete foods.strawberries;
+
+
+console.log(foods);
