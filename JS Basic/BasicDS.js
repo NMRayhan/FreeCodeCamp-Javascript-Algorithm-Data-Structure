@@ -1,16 +1,18 @@
 /*
-Here we've defined an object userActivity, which includes another object nested within it. Set the value of the online key to 45.
+We've defined a function, checkInventory, which receives a scanned item as an argument. Return the current value of the scannedItem key in the foods object. You can assume that only valid keys will be provided as an argument to checkInventory.
 */
 
-let userActivity = {
-    id: 23894201352,
-    date: 'January 1, 2017',
-    data: {
-        totalUsers: 51,
-        online: 42
-    }
-};
-
-userActivity.data.online = 45;
-
-console.log(userActivity);
+let foods = {
+    apples: 25,
+    oranges: 32,
+    plums: 28,
+    bananas: 13,
+    grapes: 35,
+    strawberries: 27
+  };
+  
+  function checkInventory(scannedItem) {
+    return foods[scannedItem]
+  }
+  
+  console.log(checkInventory("apples"));
