@@ -1,20 +1,17 @@
 /*
-Reverse the provided string.
-You may need to turn the string into an array before you can reverse it.
-Your result must be a string.
-
-Array.split() Method create a Array From String Separated By ""(comma)
-Array.reverse() Method use Reverse and Return as New Array
-Array.join() Method use for Join Separated Array by ""(empty String) and return as new String
-
+Return the factorial of the provided integer.
+If the integer is represented with the letter n, a factorial is the product of all positive integers less than or equal to n.
+Factorials are often represented with the shorthand notation n!
+For example: 5! = 1 * 2 * 3 * 4 * 5 = 120
+Only integers greater than or equal to zero will be supplied to the function.
 */
 
-function reverseString(str) {
-    let newStr = "";
-    for (let i = str.length - 1; i >= 0; i--) {
-        newStr = newStr + str[i];
+function factorialize(num) {
+    if (num <= 1) {
+        return 1
+    } else {
+        return (num * factorialize(num - 1));
     }
-    return newStr;
 }
 
-console.log(reverseString("Nur Mohammad Rayhan"));
+console.log(factorialize(5));
