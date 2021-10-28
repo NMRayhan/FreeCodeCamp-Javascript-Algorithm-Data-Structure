@@ -10,7 +10,11 @@ Array.join() Method use for Join Separated Array by ""(empty String) and return 
 */
 
 function reverseString(str) {
-    return str.split("").reverse().join("");
-  }
-  
-console.log(reverseString("hello"));
+    let newStr = "";
+    for (let i = str.length - 1; i >= 0; i--) {
+        newStr = newStr + str[i];
+    }
+    return newStr;
+}
+
+console.log(reverseString("Nur Mohammad Rayhan"));
