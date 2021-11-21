@@ -1,13 +1,18 @@
 /*
-Repeat a given string str (first argument) for num times (second argument). Return an empty string if num is not a positive number. For the purpose of this challenge, do not use the built-in .repeat() method.
+Create a function that looks through an array arr and returns the first element in it that passes a 'truth test'. This means that given an element x, the 'truth test' is passed if func(x) is true. If no element passes the test, return undefined.
 */
 
 
-function repeatStringNumTimes(str, num) {
-    let newAns = ""
-    for(let count=0; count<num; count++){
-        newAns = newAns + str;
+function findElement(arr, func) {
+    let num = 0;
+
+    for(let i=0; i<arr.length; i++){
+        num = arr[i];
+        if(func(num)){
+            return num;
+        }
     }
-    return newAns;
+    return undefined;
 }
-console.log(repeatStringNumTimes("*", 3));
+
+console.log(findElement([1, 2, 3, 4], num => num % 2 === 0));
