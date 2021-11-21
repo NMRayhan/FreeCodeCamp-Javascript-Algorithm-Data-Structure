@@ -10,5 +10,4 @@ function repeatStringNumTimes(str, num) {
     }
     return newAns;
 }
-
 console.log(repeatStringNumTimes("*", 3));
